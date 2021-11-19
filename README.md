@@ -1,10 +1,11 @@
 # Blockchain Developer Bootcamp Final Project
-(Disclaimer: The general idea of my project was created before I learned of Filecoin and NFT's. I understand now that these are better alternatives for this kind of decentralized application.)
+(Disclaimer: The general idea of my project was formed before I learned of Filecoin and NFT's. I understand now that these are better alternatives for this kind of decentralized application.)
 
 
 Develop a blockchain that the music industry could theoretically use to handle copyright issues.
 
-An artist's private key could verify if a particular artist had a recording logged to the chain, and if someone created a song that was too similair to that recording, then the timestamp could be used to testify that the original was created first.
+Using my dapp, an artist will use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. The SongID is a hypotheical way of establishing a time table for when songs were created. For example, a song with the ID of 42 would've been created before 187. This allows a method of proving copyright status.
+
 
 Requirements:
  1. The user should be able to add proof of their song the contract.
