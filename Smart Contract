@@ -1,0 +1,31 @@
+pragma solidity ... 
+
+  contract songBook {
+  
+  uint songId;
+  uint songFileHash;
+  string songTitle;
+  
+  struct Song {
+  uint songId;
+  uint songFileHash;
+  string songTitle;
+  
+  Song[] public songs
+  
+  
+  function logSong (_) {
+ // creates a new song struct and adds it to songs[]
+  }
+  
+  function verifyUser(_) {
+  // verifies that user who logged the song
+  }
+  
+  function updateSong () {
+  // alows a user to change a song but keep the same songId if they wish
+  }
+  
+  function deleteSong () {
+  
+  }
