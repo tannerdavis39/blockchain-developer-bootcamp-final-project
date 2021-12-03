@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Book</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  
+
+</head>
+<body>
+  <h1>Welcome to SongBook</h1>
+  <p>
+    Are you ready to take ownership of your music, without a pesky third party? Let's get started!
+  </p>
+  <div id="mm-detected"></div>
+
+  <!-- Connect to MetaMask Wallet -->
+
+  <button id="mm-connect">Connect to MetaMask</button>
+
+  <!-- Display current address -->
+
+  <div id="mm-current-account"></div>
+
+  <!-- Provide an input to change the contract text value -->
+  <div>
+    <input id="ss-input-box1" type="text" placeholder="Audio File Hash"/>  
+  </div>
+
+
+  <button id="ss-input-button1">Submit Hash</button>
+
+
+  <div>
+  <input id="ss-input-box2" type="text" placeholder="Verify File Hash"/>  
+</div>
+
+
+<button id="ss-input-button2">Verify Song</button>
+
+
+
+
+  <!-- Read input from contract -->
+
+  <div id="ss-display-value" ></div>
+
+
+
+</body>
+
+
+
+<!-- Had trouble and had to move the script down! -->
+<script src="SongBookdapp.js"></script>
+
+
+</html>

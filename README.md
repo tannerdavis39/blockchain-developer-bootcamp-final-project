@@ -10,3 +10,6 @@ Using my dapp, an artist will use a SHA-256 hash of their audio file to log, and
 Requirements:
  1. The user should be able to add proof of their song the contract.
  2. The user should be able to continually verify that they are the owner of the song.
+
+uint public SongID;
+     uint public UserID;
