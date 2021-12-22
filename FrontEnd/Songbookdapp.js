@@ -148,7 +148,7 @@ const ssSubmit1 = document.getElementById('ss-input-button1');
 ssSubmit1.onclick = async () => {
   // grab value from input
   
-  const ssInputValue1 = document.getElementById('ss-input-box1').value;
+  const ssInputValue1 = document.getElementById('ss-input-box1');
   console.log(ssInputValue1)
 
 
@@ -178,10 +178,11 @@ ssSubmit2.onclick = async () => {
   // instantiate smart contract instance
   
  const SongBook = new web3.eth.Contract(ssABI, ssAddress)
-  SongBook.setProvider(window.ethereum)
+  
+ SongBook.setProvider(window.ethereum)
 
  
- const verified = await SongBook.methods.nested(ethereum.selectedAddress, ssInputValue2).call({from: ethereum.selectedAddress})
+ const verified = await SongBook.methods.nested(ethereum.selectedAddress, ssInputValue2).call()
 
  console.log(verified)
 
