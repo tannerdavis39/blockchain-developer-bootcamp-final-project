@@ -1,7 +1,8 @@
 
 
+
 // contract address on Ropsten:
-const ssAddress = '0xFbACACB9ca4c9CC7470f077a69B25F76A210a66f'
+const ssAddress = '0x7805A8a2878C8892340faAB7DC2D3F5505617130'
 
 // add contract ABI from Remix:
 
@@ -11,9 +12,9 @@ const ssABI =
 	{
 		"inputs": [
 			{
-				"internalType": "string",
+				"internalType": "bytes32",
 				"name": "SongID1",
-				"type": "string"
+				"type": "bytes32"
 			}
 		],
 		"name": "addSong1",
@@ -29,9 +30,9 @@ const ssABI =
 				"type": "address"
 			},
 			{
-				"internalType": "string",
+				"internalType": "bytes32",
 				"name": "",
-				"type": "string"
+				"type": "bytes32"
 			}
 		],
 		"name": "nested",
@@ -53,9 +54,9 @@ const ssABI =
 				"type": "address"
 			},
 			{
-				"internalType": "string",
+				"internalType": "bytes32",
 				"name": "SongID1",
-				"type": "string"
+				"type": "bytes32"
 			}
 		],
 		"name": "remove",
@@ -66,9 +67,9 @@ const ssABI =
 	{
 		"inputs": [
 			{
-				"internalType": "string",
+				"internalType": "bytes32",
 				"name": "SongID1",
-				"type": "string"
+				"type": "bytes32"
 			}
 		],
 		"name": "verifySong1",
@@ -148,7 +149,7 @@ const ssSubmit1 = document.getElementById('ss-input-button1');
 ssSubmit1.onclick = async () => {
   // grab value from input
   
-  const ssInputValue1 = document.getElementById('ss-input-box1');
+  const ssInputValue1 = document.getElementById('ss-input-box1').value;
   console.log(ssInputValue1)
 
 
@@ -160,7 +161,7 @@ ssSubmit1.onclick = async () => {
   
   SongBook.setProvider(window.ethereum)
 
-  await SongBook.methods.addSong1(ssInputValue1).send({from: ethereum.selectedAddress});
+  await SongBook.methods.addSong1("0x" + ssInputValue1).send({from: ethereum.selectedAddress});
 
 }
 
@@ -169,7 +170,7 @@ const ssSubmit2 = document.getElementById('ss-input-button2');
 ssSubmit2.onclick = async () => {
   // grab value from input
   
-  const ssInputValue2 = document.getElementById('ss-input-box2');
+  const ssInputValue2 = document.getElementById('ss-input-box2').value;
   console.log(ssInputValue2)
 
 
@@ -178,21 +179,20 @@ ssSubmit2.onclick = async () => {
   // instantiate smart contract instance
   
  const SongBook = new web3.eth.Contract(ssABI, ssAddress)
-  
+ 
  SongBook.setProvider(window.ethereum)
 
  
- const verified = await SongBook.methods.nested(ethereum.selectedAddress, ssInputValue2).call()
+ const verified = await SongBook.methods.verifySong1("0x" + ssInputValue2).call({from: ethereum.selectedAddress});
 
- console.log(verified)
+console.log(verified)
 
   const ssDisplayValue = document.getElementById('ss-display-value')
 
-  ssDisplayValue.innerHTML = 'Song is verified: ' + verified
+  ssDisplayValue.innerHTML = 'Song is verified: ' + verified; 
 
   
 
 }
-
 
 
