@@ -5,10 +5,12 @@
 
 # Develop a blockchain that the music industry could use to handle copyright issues.
 
-Using my dapp, an song writers can use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. Etherscan is the current way of establishing a time table for when songs were created, but I plan to build out the smart contract so that this isn't necessary.
+Using my dapp, song writers can use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. Etherscan is the current way of establishing a time table for when songs were created, but I plan to build out the smart contract so that this isn't necessary.
+
 
 Front End:
 https://tannerdavis39.github.io/blockchain-developer-bootcamp-final-project/FrontEnd/index.html
+
 
 
 Public ethereum address:
