@@ -5,13 +5,12 @@
 
 # Develop a blockchain that the music industry could use to handle copyright issues.
 
-Using my dapp, an artist will use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. The SongID is a way of establishing a time table for when songs were created. For example, a song with the ID of 42 would've been created before 187. This allows a method of proving copyright status.
+Using my dapp, an song writers can use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. Etherscan is the current way of establishing a time table for when songs were created, but I plan to build out the smart contract so that this isn't necessary.
 
-
-Requirements:
- 1. The user should be able to add proof of their song the contract.
- 2. The user should be able to continually verify that they are the owner of the song.
-
-
+Front End:
 https://tannerdavis39.github.io/blockchain-developer-bootcamp-final-project/FrontEnd/index.html
+
+
+Public ethereum address:
+0x00f03d1BE25630E174060A7Cf2D8df39B8459f11
 
