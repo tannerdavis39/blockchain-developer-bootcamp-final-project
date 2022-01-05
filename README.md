@@ -8,6 +8,8 @@
 Using my dapp, song writers can use a SHA-256 hash of their audio file to log, and later verify that they are the owner of the original file that stores their song. Etherscan is the current way of establishing a time table for when songs were created, but I plan to build out the smart contract to keep the dapp localized. I also plan to implent the ERC 721 standard and leverage IPFS to deal with storage issues.
 
 #
+To run test my project locally you will need to install truffle and npm. After you clone the repository, you should be able to truffle test.
+#
 
 Front End:
 https://tannerdavis39.github.io/blockchain-developer-bootcamp-final-project/FrontEnd/index.html
