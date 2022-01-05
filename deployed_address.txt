@@ -1,0 +1,1 @@
+My smart contract is deployed on ropsten and the address is 0x7805A8a2878C8892340faAB7DC2D3F5505617130
