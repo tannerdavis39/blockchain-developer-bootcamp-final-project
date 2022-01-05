@@ -53,7 +53,7 @@ contract("contract2", function ( accounts ) {
   });
 
 
-  it("should allow owner to remove their song", async () => {
+  it("should allow a song to be removed", async () => {
     
     const Instance = await contract2.deployed();
 
