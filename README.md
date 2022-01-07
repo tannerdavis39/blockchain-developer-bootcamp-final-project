@@ -16,7 +16,8 @@ https://tannerdavis39.github.io/blockchain-developer-bootcamp-final-project/Fron
 
 
 #
-
+Screen Recording Walkthrough https://www.loom.com/share/6b13487a42fc4496b6b8349792c51e26
+#
 
 Public ethereum address:
 0x00f03d1BE25630E174060A7Cf2D8df39B8459f11
